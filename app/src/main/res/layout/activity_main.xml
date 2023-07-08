@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Linear Layout created for entire screen -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- Layout for spinner and answer unit -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <!-- Layout for spinner and answer unit selection -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <!-- Spinner for selecting the unit to convert from -->
+            <Spinner
+                android:id="@+id/convertFromUnit"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:entries="@array/convertFromUnit" />
+
+            <!-- TextView to display the unit that the value is converted to -->
+            <TextView
+                android:id="@+id/answerUnit"
+                android:layout_width="200dp"
+                android:textColor="#FF0000"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:text=""/>
+        </LinearLayout>
+
+        <!-- Space to separate the spinner/answer unit and text input/result -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+
+        <!-- Horizontal Layout for text input and result -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <!-- TextInputLayout for user input -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/enteredValue"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter the Value" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <!-- TextView to display the result of the conversion -->
+            <TextView
+                android:id="@+id/answer"
+                android:layout_width="200dp"
+                android:textColor="#FF0000"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:text="Result"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

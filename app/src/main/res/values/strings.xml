@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- This is the name that shows on the application  -->
+    <!-- we can modify this string to change the name of application-->
+    <string name="app_name">Conversion Calculator</string>
+
+    <!--Result label -->
+    <string name="Result">Result</string>
+
+    <!-- List of conversion that displayed on the drop down -->
+    <!-- By default the kilometer is displayed-->
+    <string-array name="convertFromUnit">
+        <item>Kilometer</item>
+        <item>Miles</item>
+        <item>Centimeter</item>
+        <item>Inches</item>
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
+</resources>
